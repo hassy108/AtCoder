@@ -20,3 +20,9 @@ ___
 ### [スライス](https://qiita.com/tanuk1647/items/276d2be36f5abb8ea52e)
 シーケンス(リスト，文字列etc.)の一部を切り取ってコピーを返す．
 `sequence[start:stop:step]`
+
+___
+# 20/08/11
+### [セット](https://note.nkmk.me/python-set/)
+セットは重複しない要素の集まり．集合演算を行える．  
+`s = {1, 2, 2, 3, 4}`
