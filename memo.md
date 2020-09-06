@@ -62,3 +62,61 @@ S_N=\begin{Bmatrix}
 
 
 [数式の書き方](https://shd101wyy.github.io/markdown-preview-enhanced/#/ja-jp/math)
+
+___
+### 20/09/06
+# [for-else](https://python.civic-apps.com/else-loop/)
+ループ内を`break`で抜けなかったとき`else`内が実行される
+要素内で条件を満たさなかったとき，多重ループを抜けるときに使える．
+```python
+#要素内を探索して見つからない
+for i in range(10)
+    if i == 100:
+        print('Found 100')
+        break
+else:
+    print('Not found 100')
+```
+```python
+#多重ループを抜ける
+for i in range(10):
+    for j in range(10):
+        if i + j == 10:
+            print('Found pair')
+            break   #ここでbreakすると
+    else:   
+        print('Not Found pair')
+        continue    #このcontinueが実行されず
+    break   #このbreakが実行されてループを抜ける
+```
+
+# [Union-Find](https://pyteyon.hatenablog.com/entry/2019/03/11/200000)
+無向グラフに対して
+- 2つのグループをつなげる．
+- 2つの要素が連結か調べる．
+というクエリ(要求)を高速に行えるアルゴリズムとデータ構造．
+リンク読め．
+
+# [クラス](https://qiita.com/Usek/items/a206b8e49c02f756d636)
+pythonでのクラスの書き方.
+命名規則はCapWords方式(先頭大文字のラクダ)
+ちなみに，変数と関数はヘビ
+```python
+class ClassName:
+    #メンバ変数
+    pub = 0     #普通に書くとpublic
+    __pri = ''   #先頭に__(アンダーバー2つ)でprivate
+
+    #コンストラクタ
+    def __init__(self):     #selfはjavaのthis的なもの．必ず書く．
+        self.pub = 2
+        self.__pri = 'a'
+
+    #メソッド
+    def method(self, msg):
+        print(msg)
+
+#クラスの生成とメソッドの呼び出し
+class_name = ClassName()
+class_name.method('nya--')
+```
