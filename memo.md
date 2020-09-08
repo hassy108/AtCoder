@@ -120,3 +120,14 @@ class ClassName:
 class_name = ClassName()
 class_name.method('nya--')
 ```
+
+___
+### 20/09/08
+# [切り捨て除算](https://python.ms/division/#_3%E3%81%A4%E3%81%AE%E3%82%84%E3%82%8A%E6%96%B9)
+`//`演算子は除算の整数部のみ返す(切り捨てて返す)
+```python
+print( 4//3)    # 1 切り捨て
+print(-4//3)    #-2 負の無限大への切り捨て
+print(-(-4//3)) # 2 切り上げ
+```
+
