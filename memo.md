@@ -131,3 +131,14 @@ print(-4//3)    #-2 負の無限大への切り捨て
 print(-(-4//3)) # 2 切り上げ
 ```
 
+
+___
+### 20/09/10
+# [dequeueモジュール](https://note.nkmk.me/python-collections-deque/)
+キュー，スタック，デック(両端キュー)を効率的に扱うことが出来るモジュール．
+```python
+from collections import deque
+
+```
+
+
