@@ -10,7 +10,7 @@ https://betrue12.hateblo.jp/entry/2018/12/08/000020
 from collections import deque
 
 h, w = map(int, input().split())
-ch, cw = map(lambda x:int(x)-1, input().split())    #0indexにして受け取る
+ch, cw = map(lambda x:int(x)-1, input().split())    #0indexedにして受け取る
 dh, dw = map(lambda x:int(x)-1, input().split())
 s = [input() for _ in range(h)]
 #距離(スタートからijまでの総コスト)
